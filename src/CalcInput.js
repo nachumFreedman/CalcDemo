@@ -17,7 +17,7 @@ class CalcInput extends Component{
       <button onClick={() => (this.props.onFunc('+'))}> Add </button>
       <button onClick={() => (this.props.onFunc('-'))}> Minus </button>
       <button onClick={() => (this.props.onFunc('%'))}> Modulo </button>
-      <button onClick={() => (this.props.onFunc('/'))}> Devide </button>
+      <button onClick={() => (this.props.onFunc('/'))}> Divide </button>
       <button onClick={this.props.onClear}> Clear </button>
       <button onClick={this.props.onEq}> Is </button>
       </div>

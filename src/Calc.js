@@ -34,7 +34,7 @@ class Calc extends Component {
 
   onEq = () => {
     const { func, previousValue, storedValue } = this.state;
-    this.setState({ storedValue:0, previousValue: eval(`${storedValue}${func}${previousValue}`)})
+    this.setState({ previousValue:0, storedValue: eval(`${previousValue}${func}${storedValue}`)})
   }
 
   render() {
