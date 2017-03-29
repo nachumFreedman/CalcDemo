@@ -8,16 +8,18 @@ class Calc extends Component {
     console.log('blah')
     super();
     this.state = {
-      displayNumber: 0,
-      storedNumber: 0,
-      eval: 0
+      storedValue: 0,
+      previousValue: 0,
+      func: '+'
     }
   }
   onNumber = (number) => {
-    this.setState({ displayNumber: this.state.displayNumber *10 + number  });
+    console.log(number)
+    this.setState({ storedValue: this.state.storedValue *10 + number });
   }
   onFunc = (func) => {
-    this.setState({ func, storedValue: this.state.displayValue, displayValue: 0});
+    console.log(onFunc)
+    this.setState({ func, previousValue: this.state.storedValue, storedValue: 0 });
   }
   render() {
 
@@ -28,11 +30,10 @@ class Calc extends Component {
       <img src={logo} className="Calc-logo" alt="logo" />
       <h2>Welcome to React</h2>
       </div>
-      <CalcDisplay displayNumber={this.state.displayNumber}
-      storedNumber={this.state.storedNumber}
-      func={this.state.func}/>
-      <CalcInput/>
-
+      <CalcDisplay storedValue={this.state.storedValue}
+      previousvalue={this.state.previousvalue}/>
+      <CalcInput onNumber={this.onNumber}
+      onFunc={this.onFunc}/>
       </div>
 
     );

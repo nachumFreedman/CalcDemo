@@ -4,9 +4,8 @@ class CalcDisplay extends Component {
     console.log(this.props)
     return(
       <div>
-      <p>'halb'</p>
-      <p>{this.props.displayNumber}</p>
-      <p>{this.props.storedNumber}</p>
+      <p>{this.props.storedValue}</p>
+      <p>{this.props.previousValue}</p>
       </div>
     )
   };
