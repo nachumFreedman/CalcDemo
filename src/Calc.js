@@ -13,6 +13,12 @@ class Calc extends Component {
       eval: 0
     }
   }
+  onNumber = (number) => {
+    this.setState({ displayNumber: this.state.displayNumber *10 + number  });
+  }
+  onFunc = (func) => {
+    this.setState({ func, storedValue: this.state.displayValue, displayValue: 0});
+  }
   render() {
 
     return (
@@ -22,8 +28,11 @@ class Calc extends Component {
       <img src={logo} className="Calc-logo" alt="logo" />
       <h2>Welcome to React</h2>
       </div>
-      <CalcDisplay/>
+      <CalcDisplay displayNumber={this.state.displayNumber}
+      storedNumber={this.state.storedNumber}
+      func={this.state.func}/>
       <CalcInput/>
+
       </div>
 
     );
