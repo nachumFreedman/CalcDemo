@@ -31,11 +31,20 @@ class Calc extends Component {
       func: '+',
     });
   }
-
   onEq = () => {
     const { func, previousValue, storedValue } = this.state;
-    this.setState({ previousValue:0, storedValue: eval(`${previousValue}${func}${storedValue}`)})
-  }
+    if (func === '+') {
+      this.setState({storedValue: previousValue + storedValue, previousValue: 0})
+    } else if (func === '/') {
+      this.setState({storedValue: previousValue / storedValue, previousValue: 0})
+    }else if (func === '%') {
+      this.setState({storedValue: previousValue % storedValue, previousValue: 0})
+    } else if (func === '*') {
+      this.setState({storedValue: previousValue * storedValue, previousValue: 0})
+    } else if (func === '-') {
+      this.setState({storedValue: previousValue - storedValue, previousValue: 0}) 
+    }}
+
 
   render() {
 

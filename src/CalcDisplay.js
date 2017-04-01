@@ -5,6 +5,7 @@ class CalcDisplay extends Component {
     return(
       <div>
       <p>{this.props.storedValue}</p>
+      <p>{this.props.func}</p>
       <p>{this.props.previousValue}</p>
       </div>
     )
