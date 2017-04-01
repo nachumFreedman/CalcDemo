@@ -23,10 +23,9 @@ class CalcInput extends Component{
       <button onClick={() => (this.props.onNumber(0))}> 0 </button>
       <button onClick={() => (this.props.onFunc('/'))}> / </button>
       <button onClick={() => (this.props.onFunc('%'))}> % </button>
-      </div>
-      <display-in-line-block>
       <button onClick={this.props.onEq}> Is </button>
-      </display-in-line-block>
+      </div>
+
     )
   }
 }
