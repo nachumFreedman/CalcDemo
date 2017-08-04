@@ -22,3 +22,73 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+.button1{
+  position: relative;
+    left: 29px;
+    color: #993299;
+}
+.button2{
+  position: relative;
+    left: 28px;
+}
+.button3{
+  position: relative;
+    left: 27px;
+}
+.button4{
+  position: relative;
+    left: 26px;
+}
+.button5{
+  position: relative;
+    left: 25px;
+}
+.button6{
+  position: relative;
+    left: 24px;
+}
+.button7{
+  position: relative;
+    left: 23px;
+}
+.button8{
+  position: relative;
+    left: 22px;
+}
+.button9{
+  position: relative;
+    left: 21px;
+}
+.button0{
+  position: relative;
+    left: 30px;
+    padding: 3px;
+}
+.buttonPlus{
+  position: relative;
+    left: 30px;
+}
+.buttonMinus{
+  position: relative;
+    left: 30px;
+}
+.buttonEq{
+  position: relative;
+    left: 30px;
+}
+.buttonDevide{
+  position: relative;
+    left: 30px;
+}
+.buttonMod {
+  position: relative;
+    left: 30px;
+}
+.buttonTimes{
+position: relative;
+left: 30px;
+}
+.buttonClear{
+position: relative;
+left: 30px;
+}
